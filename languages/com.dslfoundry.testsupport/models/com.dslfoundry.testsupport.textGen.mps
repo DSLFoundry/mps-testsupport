@@ -11,6 +11,7 @@
     <import index="dxz5" ref="r:a1b302c5-0365-46bf-98b6-c70449cbd33f(com.dslfoundry.testsupport.structure)" />
     <import index="xydj" ref="r:84fe4b11-ad68-47d5-a834-0274798d73f7(jetbrains.mps.baseLanguage.javadoc.textGen)" />
     <import index="m373" ref="r:4095af4f-a097-4799-aaa9-03df087ddfa6(jetbrains.mps.baseLanguage.javadoc.structure)" />
+    <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -25,9 +26,15 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
+        <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
+      </concept>
     </language>
     <language id="b83431fe-5c8f-40bc-8a36-65e25f4dd253" name="jetbrains.mps.lang.textGen">
       <concept id="1237305208784" name="jetbrains.mps.lang.textGen.structure.NewLineAppendPart" flags="ng" index="l8MVK" />
+      <concept id="1237305334312" name="jetbrains.mps.lang.textGen.structure.NodeAppendPart" flags="ng" index="l9hG8">
+        <child id="1237305790512" name="value" index="lb14g" />
+      </concept>
       <concept id="1237305491868" name="jetbrains.mps.lang.textGen.structure.CollectionAppendPart" flags="ng" index="l9S2W">
         <child id="1237305945551" name="list" index="lbANJ" />
       </concept>
@@ -50,6 +57,10 @@
       <concept id="8937790975493363649" name="jetbrains.mps.lang.textGen.structure.AttributedNodePart" flags="ng" index="3mW3T8" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
+        <reference id="1138056516764" name="link" index="3Tt5mk" />
+      </concept>
       <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
         <reference id="1138056546658" name="link" index="3TtcxE" />
       </concept>
@@ -111,6 +122,28 @@
         </node>
         <node concept="lc7rE" id="5NnxLi4NAz$" role="3cqZAp">
           <node concept="3mW3T8" id="5NnxLi4NAz_" role="lcghm" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="4P14DYqV0h1">
+    <ref role="WuzLi" to="dxz5:4P14DYqSUwb" resolve="QuickfixDocReference" />
+    <node concept="11bSqf" id="4P14DYqV0h2" role="11c4hB">
+      <node concept="3clFbS" id="4P14DYqV0h3" role="2VODD2">
+        <node concept="lc7rE" id="4P14DYqV0Zw" role="3cqZAp">
+          <node concept="l9hG8" id="4P14DYqV18h" role="lcghm">
+            <node concept="2OqwBi" id="4P14DYqV1GC" role="lb14g">
+              <node concept="2OqwBi" id="4P14DYqV1gT" role="2Oq$k0">
+                <node concept="117lpO" id="4P14DYqV197" role="2Oq$k0" />
+                <node concept="3TrEf2" id="4P14DYqV1yh" role="2OqNvi">
+                  <ref role="3Tt5mk" to="dxz5:4P14DYqSUwc" resolve="quickfix" />
+                </node>
+              </node>
+              <node concept="2qgKlT" id="4P14DYqV1Vm" role="2OqNvi">
+                <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
+              </node>
+            </node>
+          </node>
         </node>
       </node>
     </node>

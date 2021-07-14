@@ -7,6 +7,8 @@
   </languages>
   <imports>
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
+    <import index="al5i" ref="r:742f344d-4dc4-4862-992c-4bc94b094870(com.mbeddr.mpsutil.dev.build)" />
+    <import index="90a9" ref="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.itemis.mps.extensions.build)" />
   </imports>
   <registry>
     <language id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build">
@@ -114,6 +116,7 @@
         <child id="5253498789149547704" name="dependencies" index="3bR37C" />
       </concept>
       <concept id="5253498789149585690" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleDependencyOnModule" flags="ng" index="3bR9La">
+        <property id="5253498789149547713" name="reexport" index="3bR36h" />
         <reference id="5253498789149547705" name="module" index="3bR37D" />
       </concept>
       <concept id="763829979718664966" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleResources" flags="ng" index="3rtmxn">
@@ -190,6 +193,23 @@
         </node>
       </node>
     </node>
+    <node concept="398rNT" id="6Cdyqe0eZ$P" role="1l3spd">
+      <property role="TrG5h" value="languageLibs" />
+      <node concept="55IIr" id="6Cdyqe0eZBC" role="398pKh">
+        <node concept="2Ry0Ak" id="6Cdyqe0eZBF" role="iGT6I">
+          <property role="2Ry0Am" value="dependencies" />
+        </node>
+      </node>
+    </node>
+    <node concept="398rNT" id="4rV_RxWW_3O" role="1l3spd">
+      <property role="TrG5h" value="platform" />
+      <node concept="398BVA" id="4rV_RxWW_4P" role="398pKh">
+        <ref role="398BVh" node="6Cdyqe0eZ$P" resolve="languageLibs" />
+        <node concept="2Ry0Ak" id="4rV_RxWW_4S" role="iGT6I">
+          <property role="2Ry0Am" value="com.mbeddr.platform" />
+        </node>
+      </node>
+    </node>
     <node concept="2kB4xC" id="2G_dda_8MU3" role="1l3spd">
       <property role="TrG5h" value="build" />
       <node concept="aVJcg" id="2G_dda_8MUo" role="aVJcv">
@@ -214,6 +234,18 @@
       <ref role="1l3spb" to="ffeo:3IKDaVZmzS6" resolve="mps" />
       <node concept="398BVA" id="4rV_RxWVH4k" role="2JcizS">
         <ref role="398BVh" node="4rV_RxWVH4i" resolve="mps.home" />
+      </node>
+    </node>
+    <node concept="2sgV4H" id="4P14DYqVMGv" role="1l3spa">
+      <ref role="1l3spb" to="90a9:2Xjt3l56m0V" resolve="de.itemis.mps.extensions" />
+      <node concept="398BVA" id="4P14DYqVMGA" role="2JcizS">
+        <ref role="398BVh" node="4rV_RxWW_3O" resolve="platform" />
+      </node>
+    </node>
+    <node concept="2sgV4H" id="4P14DYqVMDD" role="1l3spa">
+      <ref role="1l3spb" to="al5i:3AVJcIMlF8l" resolve="com.mbeddr.platform" />
+      <node concept="398BVA" id="4P14DYqVMDI" role="2JcizS">
+        <ref role="398BVh" node="4rV_RxWW_3O" resolve="platform" />
       </node>
     </node>
     <node concept="1l3spV" id="4rV_RxWVH4J" role="1l3spN">
@@ -262,6 +294,15 @@
       </node>
       <node concept="m$_yC" id="4rV_RxWVHbI" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:ymnOULATpW" resolve="jetbrains.mps.testing" />
+      </node>
+      <node concept="m$_yC" id="4P14DYqVMEt" role="m$_yJ">
+        <ref role="m$_y1" to="al5i:5fGcQI94fMR" resolve="com.mbeddr.mpsutil.common" />
+      </node>
+      <node concept="m$_yC" id="4P14DYqVMI8" role="m$_yJ">
+        <ref role="m$_y1" to="al5i:33r_JpZ6k_l" resolve="com.mbeddr.platform.build" />
+      </node>
+      <node concept="m$_yC" id="4P14DYqVMHo" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:4hvHh3QW$Eh" resolve="de.itemis.mps.extensions.build" />
       </node>
       <node concept="3_J27D" id="4rV_RxWVH4D" role="m_cZH">
         <node concept="3Mxwew" id="4rV_RxWVH4E" role="3MwsjC">
@@ -443,6 +484,50 @@
           </node>
         </node>
       </node>
+      <node concept="1E1JtA" id="4P14DYqVGMS" role="2G$12L">
+        <property role="TrG5h" value="com.dslfoundry.testsupport.compare" />
+        <property role="3LESm3" value="9e32bbaa-31a2-4b58-b352-d35e7ce7e398" />
+        <node concept="398BVA" id="4P14DYqVGO8" role="3LF7KH">
+          <ref role="398BVh" node="44nlSZ6cGh4" resolve="testsupport.home" />
+          <node concept="2Ry0Ak" id="4P14DYqVGOe" role="iGT6I">
+            <property role="2Ry0Am" value="solutions" />
+            <node concept="2Ry0Ak" id="4P14DYqVGOj" role="2Ry0An">
+              <property role="2Ry0Am" value="com.dslfoundry.testsupport.compare" />
+              <node concept="2Ry0Ak" id="4P14DYqVGOo" role="2Ry0An">
+                <property role="2Ry0Am" value="com.dslfoundry.testsupport.compare.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1BupzO" id="4P14DYqVGOO" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="4P14DYqVGOP" role="1HemKq">
+            <node concept="398BVA" id="4P14DYqVGOG" role="3LXTmr">
+              <ref role="398BVh" node="44nlSZ6cGh4" resolve="testsupport.home" />
+              <node concept="2Ry0Ak" id="4P14DYqVGOH" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="4P14DYqVGOI" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.dslfoundry.testsupport.compare" />
+                  <node concept="2Ry0Ak" id="4P14DYqVGOJ" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="4P14DYqVGOQ" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4P14DYqVMEP" role="3bR37C">
+          <node concept="3bR9La" id="4P14DYqVMEQ" role="1SiIV1">
+            <property role="3bR36h" value="true" />
+            <ref role="3bR37D" to="al5i:5fGcQI947Ca" resolve="com.mbeddr.mpsutil.common" />
+          </node>
+        </node>
+      </node>
       <node concept="1E1JtA" id="5iPgiPwMsUg" role="2G$12L">
         <property role="TrG5h" value="com.dslfoundry.testsupport.build" />
         <property role="3LESm3" value="2d0990c0-09b1-4287-970d-2e22fb96380d" />
@@ -483,6 +568,16 @@
             <node concept="3qWCbU" id="5iPgiPwMsV_" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4P14DYqVMEZ" role="3bR37C">
+          <node concept="3bR9La" id="4P14DYqVMF0" role="1SiIV1">
+            <ref role="3bR37D" to="al5i:7Pr7tifzlku" resolve="com.mbeddr.platform" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4P14DYqVMH2" role="3bR37C">
+          <node concept="3bR9La" id="4P14DYqVMH3" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:PE3B26VOkn" resolve="de.itemis.mps.extensions.build" />
           </node>
         </node>
       </node>

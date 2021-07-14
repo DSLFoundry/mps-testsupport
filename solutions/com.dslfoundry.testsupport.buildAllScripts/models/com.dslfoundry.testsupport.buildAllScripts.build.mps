@@ -7,6 +7,8 @@
   </languages>
   <imports>
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
+    <import index="90a9" ref="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.itemis.mps.extensions.build)" />
+    <import index="al5i" ref="r:742f344d-4dc4-4862-992c-4bc94b094870(com.mbeddr.mpsutil.dev.build)" />
   </imports>
   <registry>
     <language id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build">
@@ -145,6 +147,16 @@
           </node>
         </node>
       </node>
+      <node concept="1SiIV0" id="4P14DYqVUiM" role="3bR37C">
+        <node concept="3bR9La" id="4P14DYqVUiN" role="1SiIV1">
+          <ref role="3bR37D" to="90a9:PE3B26VOkn" resolve="de.itemis.mps.extensions.build" />
+        </node>
+      </node>
+      <node concept="1SiIV0" id="4P14DYqVUiO" role="3bR37C">
+        <node concept="3bR9La" id="4P14DYqVUiP" role="1SiIV1">
+          <ref role="3bR37D" to="al5i:7Pr7tifzlku" resolve="com.mbeddr.platform" />
+        </node>
+      </node>
     </node>
     <node concept="2igEWh" id="$bJ0jguQs8" role="1hWBAP">
       <property role="2igJW4" value="true" />
@@ -161,6 +173,18 @@
       <ref role="1l3spb" to="ffeo:7pdFgzxlDme" resolve="mpsBuild" />
       <node concept="398BVA" id="7eF9rfAnpOX" role="2JcizS">
         <ref role="398BVh" node="23LEVbRX3hP" resolve="mps.home" />
+      </node>
+    </node>
+    <node concept="2sgV4H" id="4P14DYqVMGv" role="1l3spa">
+      <ref role="1l3spb" to="90a9:2Xjt3l56m0V" resolve="de.itemis.mps.extensions" />
+      <node concept="398BVA" id="4P14DYqVMGA" role="2JcizS">
+        <ref role="398BVh" node="4rV_RxWW_3O" resolve="platform" />
+      </node>
+    </node>
+    <node concept="2sgV4H" id="4P14DYqVMDD" role="1l3spa">
+      <ref role="1l3spb" to="al5i:3AVJcIMlF8l" resolve="com.mbeddr.platform" />
+      <node concept="398BVA" id="4P14DYqVMDI" role="2JcizS">
+        <ref role="398BVh" node="4rV_RxWW_3O" resolve="platform" />
       </node>
     </node>
     <node concept="398rNT" id="23LEVbRX3hP" role="1l3spd">
@@ -183,6 +207,23 @@
           <node concept="2Ry0Ak" id="2nvDKNM0xtX" role="2Ry0An">
             <property role="2Ry0Am" value="dependencies" />
           </node>
+        </node>
+      </node>
+    </node>
+    <node concept="398rNT" id="6Cdyqe0eZ$P" role="1l3spd">
+      <property role="TrG5h" value="languageLibs" />
+      <node concept="55IIr" id="6Cdyqe0eZBC" role="398pKh">
+        <node concept="2Ry0Ak" id="6Cdyqe0eZBF" role="iGT6I">
+          <property role="2Ry0Am" value="dependencies" />
+        </node>
+      </node>
+    </node>
+    <node concept="398rNT" id="4rV_RxWW_3O" role="1l3spd">
+      <property role="TrG5h" value="platform" />
+      <node concept="398BVA" id="4rV_RxWW_4P" role="398pKh">
+        <ref role="398BVh" node="6Cdyqe0eZ$P" resolve="languageLibs" />
+        <node concept="2Ry0Ak" id="4rV_RxWW_4S" role="iGT6I">
+          <property role="2Ry0Am" value="com.mbeddr.platform" />
         </node>
       </node>
     </node>

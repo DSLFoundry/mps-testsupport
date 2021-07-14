@@ -437,6 +437,11 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="4P14DYqTO5S" role="3bR37C">
+          <node concept="3bR9La" id="4P14DYqTO5T" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6Lc2" resolve="jetbrains.mps.lang.typesystem" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="5iPgiPwMsUg" role="2G$12L">
         <property role="TrG5h" value="com.dslfoundry.testsupport.build" />

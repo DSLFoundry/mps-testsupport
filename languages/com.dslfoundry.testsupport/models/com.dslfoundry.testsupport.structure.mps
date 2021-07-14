@@ -10,6 +10,7 @@
     <import index="m373" ref="r:4095af4f-a097-4799-aaa9-03df087ddfa6(jetbrains.mps.baseLanguage.javadoc.structure)" />
     <import index="tpe3" ref="r:00000000-0000-4000-0000-011c895902d7(jetbrains.mps.baseLanguage.unitTest.structure)" />
     <import index="lur" ref="r:fc8379f0-84d2-4927-817e-ae0057474174(jetbrains.mps.lang.test.generator.structure)" />
+    <import index="tpd4" ref="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -115,6 +116,17 @@
       <node concept="trNpa" id="7K9RWQMZ375" role="EQaZv">
         <ref role="trN6q" to="lur:uLQNrGW9aY" resolve="GeneratorTest" />
       </node>
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4P14DYqSUwb">
+    <property role="EcuMT" value="5566751091114354699" />
+    <property role="TrG5h" value="QuickfixDocReference" />
+    <ref role="1TJDcQ" to="m373:1V5cIK_b9CA" resolve="BaseDocReference" />
+    <node concept="1TJgyj" id="4P14DYqSUwc" role="1TKVEi">
+      <property role="IQ2ns" value="5566751091114354700" />
+      <property role="20kJfa" value="quickfix" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="tpd4:hGQ5zx_" resolve="TypesystemQuickFix" />
     </node>
   </node>
 </model>

@@ -205,7 +205,7 @@
       <property role="TrG5h" value="platform" />
       <node concept="398BVA" id="4rV_RxWW_4P" role="398pKh">
         <ref role="398BVh" node="6Cdyqe0eZ$P" resolve="languageLibs" />
-        <node concept="2Ry0Ak" id="4rV_RxWW_4S" role="iGT6I">
+        <node concept="2Ry0Ak" id="6$IazlNg15w" role="iGT6I">
           <property role="2Ry0Am" value="com.mbeddr.platform" />
         </node>
       </node>
@@ -239,7 +239,7 @@
     <node concept="2sgV4H" id="4P14DYqVMGv" role="1l3spa">
       <ref role="1l3spb" to="90a9:2Xjt3l56m0V" resolve="de.itemis.mps.extensions" />
       <node concept="398BVA" id="4P14DYqVMGA" role="2JcizS">
-        <ref role="398BVh" node="4rV_RxWW_3O" resolve="platform" />
+        <ref role="398BVh" node="6Cdyqe0eZ$P" resolve="languageLibs" />
       </node>
     </node>
     <node concept="2sgV4H" id="4P14DYqVMDD" role="1l3spa">

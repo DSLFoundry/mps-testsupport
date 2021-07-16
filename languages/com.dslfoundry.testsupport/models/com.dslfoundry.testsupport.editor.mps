@@ -785,9 +785,9 @@
     </node>
   </node>
   <node concept="24kQdi" id="4P14DYqSUwC">
-    <ref role="1XX52x" to="dxz5:4P14DYqSUwb" resolve="ArbitraryNodeDocReference" />
+    <ref role="1XX52x" to="dxz5:4P14DYqSUwb" resolve="QuickfixDocReference" />
     <node concept="1iCGBv" id="4P14DYqSUwE" role="2wV5jI">
-      <ref role="1NtTu8" to="dxz5:4P14DYqSUwc" resolve="node" />
+      <ref role="1NtTu8" to="dxz5:4P14DYqSUwc" resolve="quickfix" />
       <node concept="1sVBvm" id="4P14DYqSUwG" role="1sWHZn">
         <node concept="3SHvHV" id="4P14DYqSUwN" role="2wV5jI" />
       </node>

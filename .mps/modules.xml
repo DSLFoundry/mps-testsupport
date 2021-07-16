@@ -5,6 +5,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.dslfoundry.testsupport/com.dslfoundry.testsupport.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.dslfoundry.testsupport.build/com.dslfoundry.testsupport.build.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.dslfoundry.testsupport.buildAllScripts/com.dslfoundry.testsupport.buildAllScripts.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.dslfoundry.testsupport.compare/com.dslfoundry.testsupport.compare.msd" folder="" />
     </projectModules>
   </component>
 </project>

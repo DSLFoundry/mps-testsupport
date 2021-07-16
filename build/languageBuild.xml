@@ -13,7 +13,7 @@
   <property name="build" value="0000" />
   <property name="testsupport.version" value="${build}" />
   <property name="artifacts.mps" location="${mps.home}" />
-  <property name="artifacts.de.itemis.mps.extensions" location="${platform}" />
+  <property name="artifacts.de.itemis.mps.extensions" location="${languageLibs}" />
   <property name="artifacts.com.mbeddr.platform" location="${platform}" />
   <property file="${artifacts.mps}/build.properties" prefix="import.mps" />
   <property file="${artifacts.de.itemis.mps.extensions}/build.properties" prefix="import.de.itemis.mps.extensions" />

@@ -8,7 +8,7 @@
   <property name="testsupport.home" location="${basedir}/.." />
   <property name="mps.macro.testsupport.home" location="${testsupport.home}" />
   <property name="artifacts.root" location="${testsupport.home}/build/dependencies" />
-  <property name="languageLibs" location="${basedir}/dependencies" />
+  <property name="languageLibs" location="${artifacts.root}" />
   <property name="platform" location="${languageLibs}/com.mbeddr.platform" />
   <property name="build" value="0000" />
   <property name="testsupport.version" value="${build}" />

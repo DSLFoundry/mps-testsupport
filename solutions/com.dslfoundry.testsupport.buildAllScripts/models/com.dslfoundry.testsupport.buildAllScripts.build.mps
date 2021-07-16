@@ -102,7 +102,7 @@
     </language>
   </registry>
   <node concept="1l3spW" id="4i9pOwKTFVe">
-    <property role="TrG5h" value="com.dslfoundry.testsupport" />
+    <property role="TrG5h" value="com.dslfoundry.testsupport.allScripts" />
     <property role="2DA0ip" value="../../scripts" />
     <property role="turDy" value="allScripts.xml" />
     <node concept="1E1JtA" id="5iPgiPwMyxb" role="3989C9">
@@ -212,17 +212,15 @@
     </node>
     <node concept="398rNT" id="6Cdyqe0eZ$P" role="1l3spd">
       <property role="TrG5h" value="languageLibs" />
-      <node concept="55IIr" id="6Cdyqe0eZBC" role="398pKh">
-        <node concept="2Ry0Ak" id="6Cdyqe0eZBF" role="iGT6I">
-          <property role="2Ry0Am" value="dependencies" />
-        </node>
+      <node concept="398BVA" id="6$IazlNg8Da" role="398pKh">
+        <ref role="398BVh" node="4MR$$QmqomQ" resolve="artifacts.root" />
       </node>
     </node>
     <node concept="398rNT" id="4rV_RxWW_3O" role="1l3spd">
       <property role="TrG5h" value="platform" />
       <node concept="398BVA" id="4rV_RxWW_4P" role="398pKh">
         <ref role="398BVh" node="6Cdyqe0eZ$P" resolve="languageLibs" />
-        <node concept="2Ry0Ak" id="4rV_RxWW_4S" role="iGT6I">
+        <node concept="2Ry0Ak" id="6$IazlNg8Df" role="iGT6I">
           <property role="2Ry0Am" value="com.mbeddr.platform" />
         </node>
       </node>

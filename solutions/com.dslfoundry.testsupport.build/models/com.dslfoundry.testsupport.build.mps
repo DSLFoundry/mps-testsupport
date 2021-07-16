@@ -195,10 +195,8 @@
     </node>
     <node concept="398rNT" id="6Cdyqe0eZ$P" role="1l3spd">
       <property role="TrG5h" value="languageLibs" />
-      <node concept="55IIr" id="6Cdyqe0eZBC" role="398pKh">
-        <node concept="2Ry0Ak" id="6Cdyqe0eZBF" role="iGT6I">
-          <property role="2Ry0Am" value="dependencies" />
-        </node>
+      <node concept="398BVA" id="6$IazlNg8Dj" role="398pKh">
+        <ref role="398BVh" node="4MR$$QmqomQ" resolve="artifacts.root" />
       </node>
     </node>
     <node concept="398rNT" id="4rV_RxWW_3O" role="1l3spd">
